@@ -43,3 +43,17 @@ document.getElementById("addStuff").addEventListener("click", function() {
   printToDOM(result);
 });
 
+document.getElementById("subStuff").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, subtract);
+  printToDOM(result);
+});
+
+document.getElementById("multStuff").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, multiply);
+  printToDOM(result);
+});
+
+document.getElementById("divStuff").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, divide);
+  printToDOM(result);
+});
